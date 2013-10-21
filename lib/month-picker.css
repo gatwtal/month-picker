@@ -1,0 +1,108 @@
+/*
+The MIT License
+
+Copyright 2013 Martin Redlich.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+
+.gat-mp, .gat-mp .mpi, .gatmp .h, .gat-mp .ls, .gat-mp .rs, .gat-mp span,
+.gat-mp .mi, .gat-mp mns, .gat-mp m{
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+
+.gat-mp{
+    width:233px;
+    height:235px;
+    background:#efefef;
+    border:solid 1px #ccc;
+    border-radius:5px;
+    box-shadow: 0 0 5px #aaa;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+}
+
+.gat-mp .mpi{
+    width:233px;
+    height:225px;
+    margin:0;
+}
+
+.gat-mp .h{
+    background:#3399ff;
+    text-align:center;
+    font-size:22pt;
+    color:#fff;
+    height:35px;
+}
+
+.gat-mp .h span{
+    display:inline-block;
+    padding-top:1px;
+}
+
+.gat-mp .ls, .gat-mp .rs{
+    width:20px;
+    height:35px;
+    float:left;
+    margin-left:5px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.gat-mp .rs{
+    float:right;
+    margin-right:5px;
+    font-weight:bold;
+}
+
+.gat-mp .ls:hover, .gat-mp .rs:hover{
+    color:#ffcc66;
+}
+
+.gat-mp .mns{
+    width:213px;
+    margin: 10px auto;
+}
+
+.gat-mp .m{
+    width:45px;
+    float:left;
+    background:#dedede;
+    border:solid 1px #bbb;
+    border-radius: 3px;
+    color: #666;
+    font-size:16pt;
+    margin: 4px 7px;
+    padding:5px;
+    text-align:center;
+    cursor:pointer;
+}
+
+.gat-mp .m:hover, .gat-mp .mns .s{
+    background:#3399ff;
+    border-color:#0068d1;
+    color:#fff;
+}
