@@ -35,19 +35,43 @@ THE SOFTWARE.
                 clear:both;
                 margin-top:30px;
             }
+            .hl{
+                font-weight:bold;
+                color:#006666;
+                font-size:14pt;
+            }
         </style>
     </head>
     <body>
         <h1>Month Picker demo page</h1>
         <h2>Simple Month Picker unbound</h2>
         <div id="simple-month-picker-container"></div>
+        <p>
+            The currently selected month is <span class="hl" id="month-span"></span> while the selected year is <span class="hl" id="year-span"></span>.
+        </p>
         <div class="buttons">
             <button id="yearButton">Show selected year</button>
             <button id="monthButton">Show selected month</button>
         </div>
         <script type="text/javascript">
+            function updateDateSpans(){
+                var year = $('#simple-month-picker-container').monthPicker('getYear');
+                var month = $('#simple-month-picker-container').monthPicker('getMonth');
+                $('#month-span').html(month.toString());
+                $('#year-span').html(year.toString());
+            }
+            
             $(document).ready(function(){
-               $('#simple-month-picker-container').monthPicker(); 
+               $('#simple-month-picker-container').monthPicker({
+                   startMonth  : 5,
+                   startYear   : 2088,
+                   afterUpdate : function(){
+                     updateDateSpans();  
+                   },
+                   afterInit   : function(){
+                     updateDateSpans();
+                   }
+               }); 
                $('#yearButton').on('click', function(){
                   alert($('#simple-month-picker-container').monthPicker('getYear').toString()); 
                });
